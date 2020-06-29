@@ -41,21 +41,21 @@
         border: none;
         line-height: 2em;
         min-height: 400px;
-
-
+        z-index: 2;
       }
 
 
 
       #content {
         background: rgba( 49, 53, 68,1);
-        width: calc(100% - 410px);
+        width: calc(100% - 740px);
         position: absolute;
         top: 110px;
         left: 340px;
         margin: 10px 20px 26px 10px;
         padding: 20px;
         min-width: 500px;
+        z-index: 3;
       }
 
       #extra-info {
@@ -63,14 +63,27 @@
         bottom: 10%;
         left: 25%;
         text-align: center;
+      }
 
+      #contact {
+        background: rgba( 22, 25, 34,1);
+        width: 270px;
+        height: 81%;
+        position: fixed;
+        top: 110px;
+        right: 0px;
+        margin: 10px 20px 10px 10px;
+        padding: 20px;
+        border: none;
+        line-height: 2em;
+        min-height: 400px;
+        z-index: 1;
       }
 
       a.local-link {
         text-decoration: none;
         font-family: 'Josefin Sans', sans-serif;
         color: white;
-
       }
 
       a:visited {
@@ -96,8 +109,8 @@
       }
 
       .fa:hover {
-      opacity: 0.7;
-    }
+        opacity: 0.7;
+      }
 
 
       .fa-twitter {
@@ -127,6 +140,20 @@
         top: inherit;
         padding: inherit;
       }
+
+      #duration {
+
+      }
+
+      #title {
+
+      }
+
+      #tasks {
+
+      }
+
+
 
 
     </style>
@@ -182,74 +209,107 @@
 
       <h1 id="work">Work Experience</h1>
 
-      <h2>Tampere University</h2>
-
-      <p>Lorem lipsum.</p>
-
-      <p>Lorem lipsum.</p>
-      <p>Lorem lipsum.</p>
-      <p>Lorem lipsum.</p>
+      <h2>Tampere University (2017 - 2019)</h2>
+      <p id='title'>Research assistant</p>
+      <p id='duration'>(2 years and 1 month) </p>
 
 
-      <h2>Tampere University of Applied Sciences</h2>
 
-      <p>Lorem lipsum.</p>
-      <p>Lorem lipsum.</p>
-      <p>Lorem lipsum.</p>
+      <div id='tasks'>
+        <p>Designing, building, and testing of autonomous unmanned aerial systems.</p>
+        <p>Assistance in Unmanned Surface Vessel operations. </p>
+        <p>Teaching duties.</p>
 
-      <h2>Finnish Aviation Academy Ltd.</h2>
+      </div>
 
-      <p>Lorem lipsum.</p>
-      <p>Lorem lipsum.</p>
-      <p>Lorem lipsum.</p>
+
+      <h2>Tampere University of Applied Sciences (2014)</h2>
+      <p id='title'>Engineering trainee</p>
+      <p id='duration'>(3 months)</p>
+
+
+
+      <div id='tasks'>
+        <p>Damage repair and modernization of an experimental Cessna C-172 aircraft.</p>
+        <p>Stress analysis of an engine mount.</p>
+
+      </div>
+
+      <h2>Finnish Aviation Academy Ltd. (2013)</h2>
+      <p id='title'>Aircraft Maintenance Technician</p>
+      <p id='duration'> (4 months) </p>
+
+
+
+
+      <div id='tasks'>
+        <p>Maintenance work on the fleet of Cessna, Beechcraft, Embraer and Extra aircraft.</p>
+        <p>Document revisions.</p>
+
+      </div>
 
       <h1 id"education">Education</h1>
 
-      <h2>Tampere University</h2>
-
-      <p>Lorem lipsum.</p>
-
-      <p>Lorem lipsum.</p>
-      <p>Lorem lipsum.</p>
-      <p>Lorem lipsum.</p>
-
-
-      <h2>Tampere University of Applied Sciences</h2>
-
-      <p>Lorem lipsum.</p>
-      <p>Lorem lipsum.</p>
-      <p>Lorem lipsum.</p>
-
-      <h2>Länsirannikonkoulutus Oy Winnova</h2>
-
-      <p>Lorem lipsum.</p>
-      <p>Lorem lipsum.</p>
-      <p>Lorem lipsum.</p>
+      <h2>Tampere University (2019)</h2>
+      <p id='title'>Master of Science (Tech) - Mechanical Engineering</p>
 
 
 
 
+      <h2>Tampere University of Applied Sciences (2015)</h2>
+      <p id='title'>Bachelor of Engineering - Mechanical and Production Engineering</p>
 
 
-      <h2></h2>
 
-      <p>Lorem lipsum.</p>
-      <p>Lorem lipsum.</p>
-      <p>Lorem lipsum.</p>
+      <h2>Länsirannikon koulutus Oy Winnova (2010)</h2>
+      <p id='title'>Aircraft Maintenance Technician</p>
 
 
-      <h2></h2>
+
+
 
       <h1 id="skills">Skills</h1>
 
-      <p>Lorem lipsum.</p>
-      <p>Lorem lipsum.</p>
-      <p>Lorem lipsum.</p>
-      <p>Lorem lipsum.</p>
-      <p>Lorem lipsum.</p>
-      <p>Lorem lipsum.</p>
-      <p>Lorem lipsum.</p>
-      <p>Lorem lipsum.</p>
+        <h2>Software skills</h2>
+
+          <h3>3D design</h3>
+            <ul>
+              <li>CATIA V5</li>
+              <li>SolidWorks</li>
+              <li>AutoCad Inventor</li>
+            </ul>
+          <h3>Strength analysis</h3>
+            <ul>
+              <li>ANSYS WB</li>
+            </ul>
+          <h3>Mathematical analysis and modeling</h3>
+            <ul>
+              <li>MATLAB/Simulink</li>
+              <li>Mathcad</li>
+              <li>Octave</li>
+            </ul>
+          <h3>Office applications and other utilities</h3>
+            <ul>
+              <li>Word, Excel & PowerPoint</li>
+              <li>Photoshop & Lightroom</li>
+            </ul>
+
+        <h2>Programming skills</h2>
+
+
+
+
+        <h2>Other technical skills and knowledge</h2>
+          <ul>
+            <li>Experienced drone pilot.</li>
+            <li>Decent understanding of drone flight mechanics and design.</li>
+            <li>Some knowledge in aviation legislature (especially drones and maintenance related).</li>
+            <li>Some knowledge in aerodynamics and flight mechanics, aircraft structures and systems.</li>
+            <li>3D-printing, soldering and other handcraft skills for prototype building.</li>
+          </ul>
+
+
+
 
 
       <h1 id="projects">Projects</h1>
@@ -272,6 +332,14 @@
       <p>Lorem lipsum.</p>
 
 
+
+    </div>
+
+    <div id="contact">
+
+      <h1>Contact</h1>
+
+      <p>Please connect me via LinkedIn for any professional inquiries.</p>
 
     </div>
 
